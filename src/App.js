@@ -5,21 +5,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Person name="Munna" age= "21"></Person>
+        <Person name="Masum" age= "21" District="Chittagong"></Person>
+
+
       </header>
     </div>
   );
+}
+
+function Person(props) {
+  return(
+    <div>
+      <h2>Name: {props.name} and Age: {props.age}, Location: {props.District} </h2>
+    </div>
+  )  
 }
 
 export default App;
